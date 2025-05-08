@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: shopsmart
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn shopsmart.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: shopsmart.settings
+      - key: SECRET_KEY
+        value: f29d-kk6b-sxtw-w2bx
+      - key: DEBUG
+        value: "False"
