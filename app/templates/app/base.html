@@ -95,6 +95,11 @@
     <!-- Start Footer -->
     <footer class="container-fluid bg-dark text-center p-2 mt-5">
         <small class="text-white">Copyright &copy; 2025 || Designed By Aman || </small>
+            <p>
+                <a href="{% url 'contact' %}" class="text-white mx-2">Contact</a> |
+                <a href="{% url 'refund' %}" class="text-white mx-2">Refund Policy</a> |
+                <a href="{% url 'terms' %}" class="text-white mx-2">Terms & Conditions</a>
+            </p>
         <img src="{% static 'app/images/payment.png' %}" alt="" srcset="" class="img-fluid" height="2px">
     </footer> <!-- End Footer -->
 
