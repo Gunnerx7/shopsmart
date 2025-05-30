@@ -9,13 +9,13 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 
-def contact_page(request):
+def contact_view(request):
     return render(request, 'app/contact.html')
 
-def refund_policy(request):
+def refund_policy_view(request):
     return render(request, 'app/refund.html')
 
-def terms_and_conditions(request):
+def terms_view(request):
     return render(request, 'app/terms.html')
 
 
