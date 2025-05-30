@@ -8,6 +8,17 @@ from django.db.models import Q
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
+
+def contact_page(request):
+    return render(request, 'app/contact.html')
+
+def refund_policy(request):
+    return render(request, 'app/refund.html')
+
+def terms_and_conditions(request):
+    return render(request, 'app/terms.html')
+
+
 class ProductView(View):
 	def get(self, request):
 		totalitem = 0
